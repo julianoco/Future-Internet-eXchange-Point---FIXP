@@ -1,0 +1,1141 @@
+[21:45:05.959] [bmv2] [D] [thread 1322] Set default default entry for table 'FIXP_Switch_Ingress.ipv4_forward': FIXP_Switch_Ingress.ToController - 
+[21:45:05.959] [bmv2] [D] [thread 1322] Set default default entry for table 'tbl_ToMakePacketOut': FIXP_Switch_Ingress.ToMakePacketOut - 
+[21:45:05.959] [bmv2] [D] [thread 1322] Set default default entry for table 'FIXP_Switch_Ingress.etarch_forward': FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:45:05.959] [bmv2] [D] [thread 1322] Set default default entry for table 'FIXP_Switch_Ingress.etarch_forward_ng': FIXP_Switch_Ingress.ToControllerEtharcNG - 
+[21:45:05.959] [bmv2] [D] [thread 1322] Set default default entry for table 'FIXP_Switch_Ingress.ng_forward': FIXP_Switch_Ingress.ToController - 
+[21:45:05.959] [bmv2] [D] [thread 1322] Set default default entry for table 'tbl_dropPrimitive': FIXP_Switch_Ingress.dropPrimitive - 
+[21:45:05.960] [bmv2] [D] [thread 1322] Adding interface eth3 as port 1
+[21:45:05.963] [bmv2] [D] [thread 1322] Adding interface eth0 as port 2
+[21:45:05.966] [bmv2] [D] [thread 1322] Adding interface eth1 as port 3
+[21:45:05.970] [bmv2] [D] [thread 1322] Adding interface eth4 as port 4
+[21:45:05.971] [bmv2] [D] [thread 1322] Adding interface eth5 as port 5
+[21:45:05.975] [bmv2] [D] [thread 1322] Adding interface eth6 as port 6
+[21:45:05.978] [bmv2] [D] [thread 1322] Adding interface eth7 as port 7
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Processing packet received on port 2
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Parser 'parser': start
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000005
+[21:45:45.323] [bmv2] [T] [thread 1328] [0.0] [cxt 0] Bytes parsed: 14
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.323] [bmv2] [T] [thread 1328] [0.0] [cxt 0] Bytes parsed: 34
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Parser 'parser': end
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.323] [bmv2] [T] [thread 1328] [0.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.323] [bmv2] [T] [thread 1328] [0.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.323] [bmv2] [T] [thread 1328] [0.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.323] [bmv2] [T] [thread 1328] [0.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.323] [bmv2] [D] [thread 1328] [0.0] [cxt 0] Egress port is 1
+[21:45:45.324] [bmv2] [D] [thread 1330] [0.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.324] [bmv2] [D] [thread 1330] [0.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.324] [bmv2] [D] [thread 1330] [0.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.324] [bmv2] [D] [thread 1330] [0.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.324] [bmv2] [D] [thread 1330] [0.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.324] [bmv2] [D] [thread 1330] [0.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.324] [bmv2] [D] [thread 1333] [0.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Processing packet received on port 3
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Parser 'parser': start
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700000c
+[21:45:45.324] [bmv2] [T] [thread 1328] [1.0] [cxt 0] Bytes parsed: 14
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.324] [bmv2] [T] [thread 1328] [1.0] [cxt 0] Bytes parsed: 34
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Parser 'parser': end
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.324] [bmv2] [T] [thread 1328] [1.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.324] [bmv2] [T] [thread 1328] [1.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.324] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.325] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.325] [bmv2] [T] [thread 1328] [1.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.325] [bmv2] [T] [thread 1328] [1.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.325] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.325] [bmv2] [D] [thread 1328] [1.0] [cxt 0] Egress port is 1
+[21:45:45.328] [bmv2] [D] [thread 1330] [1.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.328] [bmv2] [D] [thread 1330] [1.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.328] [bmv2] [D] [thread 1330] [1.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.328] [bmv2] [D] [thread 1330] [1.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.328] [bmv2] [D] [thread 1330] [1.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.328] [bmv2] [D] [thread 1330] [1.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.328] [bmv2] [D] [thread 1333] [1.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Processing packet received on port 1
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Parser 'parser': start
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000014
+[21:45:45.330] [bmv2] [T] [thread 1328] [2.0] [cxt 0] Bytes parsed: 14
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.330] [bmv2] [T] [thread 1328] [2.0] [cxt 0] Bytes parsed: 34
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Parser 'parser': end
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.330] [bmv2] [T] [thread 1328] [2.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.330] [bmv2] [T] [thread 1328] [2.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.330] [bmv2] [T] [thread 1328] [2.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.330] [bmv2] [T] [thread 1328] [2.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.330] [bmv2] [D] [thread 1328] [2.0] [cxt 0] Egress port is 1
+[21:45:45.330] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Processing packet received on port 4
+[21:45:45.330] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Parser 'parser': start
+[21:45:45.330] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.330] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700001c
+[21:45:45.331] [bmv2] [T] [thread 1328] [3.0] [cxt 0] Bytes parsed: 14
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.331] [bmv2] [T] [thread 1328] [3.0] [cxt 0] Bytes parsed: 34
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Parser 'parser': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.331] [bmv2] [T] [thread 1328] [3.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.331] [bmv2] [T] [thread 1328] [3.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.331] [bmv2] [T] [thread 1328] [3.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.331] [bmv2] [T] [thread 1328] [3.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [3.0] [cxt 0] Egress port is 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Processing packet received on port 5
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Parser 'parser': start
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000010
+[21:45:45.331] [bmv2] [T] [thread 1328] [4.0] [cxt 0] Bytes parsed: 14
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.331] [bmv2] [T] [thread 1328] [4.0] [cxt 0] Bytes parsed: 34
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Parser 'parser': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.331] [bmv2] [T] [thread 1328] [4.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.331] [bmv2] [T] [thread 1328] [4.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.331] [bmv2] [T] [thread 1328] [4.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.331] [bmv2] [T] [thread 1328] [4.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [4.0] [cxt 0] Egress port is 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Processing packet received on port 6
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Parser 'parser': start
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000008
+[21:45:45.331] [bmv2] [T] [thread 1328] [5.0] [cxt 0] Bytes parsed: 14
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.331] [bmv2] [T] [thread 1328] [5.0] [cxt 0] Bytes parsed: 34
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Parser 'parser': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.331] [bmv2] [T] [thread 1328] [5.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.331] [bmv2] [T] [thread 1328] [5.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.331] [bmv2] [T] [thread 1328] [5.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.331] [bmv2] [T] [thread 1328] [5.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [5.0] [cxt 0] Egress port is 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Processing packet received on port 7
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Parser 'parser': start
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Extracting header 'ethernet'
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000012
+[21:45:45.331] [bmv2] [T] [thread 1328] [6.0] [cxt 0] Bytes parsed: 14
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Extracting header 'ipv4'
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:45.331] [bmv2] [T] [thread 1328] [6.0] [cxt 0] Bytes parsed: 34
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Parser 'parser': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Pipeline 'ingress': start
+[21:45:45.331] [bmv2] [T] [thread 1328] [6.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:45.331] [bmv2] [T] [thread 1328] [6.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:45.331] [bmv2] [T] [thread 1328] [6.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:45.331] [bmv2] [T] [thread 1328] [6.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Pipeline 'ingress': end
+[21:45:45.331] [bmv2] [D] [thread 1328] [6.0] [cxt 0] Egress port is 1
+[21:45:45.332] [bmv2] [D] [thread 1330] [2.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [2.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [2.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [2.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.333] [bmv2] [D] [thread 1330] [2.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.333] [bmv2] [D] [thread 1330] [2.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [3.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [3.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [3.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [3.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.333] [bmv2] [D] [thread 1330] [3.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.333] [bmv2] [D] [thread 1330] [3.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [4.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [4.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [4.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [4.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.333] [bmv2] [D] [thread 1330] [4.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.333] [bmv2] [D] [thread 1330] [4.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [5.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [5.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [5.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [5.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.333] [bmv2] [D] [thread 1330] [5.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.333] [bmv2] [D] [thread 1330] [5.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [6.0] [cxt 0] Pipeline 'egress': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [6.0] [cxt 0] Pipeline 'egress': end
+[21:45:45.333] [bmv2] [D] [thread 1330] [6.0] [cxt 0] Deparser 'deparser': start
+[21:45:45.333] [bmv2] [D] [thread 1330] [6.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:45.333] [bmv2] [D] [thread 1330] [6.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:45.333] [bmv2] [D] [thread 1330] [6.0] [cxt 0] Deparser 'deparser': end
+[21:45:45.333] [bmv2] [D] [thread 1333] [2.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:45.333] [bmv2] [D] [thread 1333] [3.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:45.333] [bmv2] [D] [thread 1333] [4.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:45.333] [bmv2] [D] [thread 1333] [5.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:45.333] [bmv2] [D] [thread 1333] [6.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Processing packet received on port 1
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Parser 'parser': start
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000014
+[21:45:46.323] [bmv2] [T] [thread 1328] [7.0] [cxt 0] Bytes parsed: 14
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.323] [bmv2] [T] [thread 1328] [7.0] [cxt 0] Bytes parsed: 34
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Parser 'parser': end
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.323] [bmv2] [T] [thread 1328] [7.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.323] [bmv2] [T] [thread 1328] [7.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.323] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.324] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.324] [bmv2] [T] [thread 1328] [7.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.324] [bmv2] [T] [thread 1328] [7.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.324] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.324] [bmv2] [D] [thread 1328] [7.0] [cxt 0] Egress port is 1
+[21:45:46.324] [bmv2] [D] [thread 1330] [7.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.324] [bmv2] [D] [thread 1330] [7.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.324] [bmv2] [D] [thread 1330] [7.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.324] [bmv2] [D] [thread 1330] [7.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.324] [bmv2] [D] [thread 1330] [7.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1330] [7.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.324] [bmv2] [D] [thread 1333] [7.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Processing packet received on port 2
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Parser 'parser': start
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000005
+[21:45:46.324] [bmv2] [T] [thread 1328] [8.0] [cxt 0] Bytes parsed: 14
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.324] [bmv2] [T] [thread 1328] [8.0] [cxt 0] Bytes parsed: 34
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Parser 'parser': end
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.324] [bmv2] [T] [thread 1328] [8.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.324] [bmv2] [T] [thread 1328] [8.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.324] [bmv2] [T] [thread 1328] [8.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.324] [bmv2] [T] [thread 1328] [8.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.324] [bmv2] [D] [thread 1328] [8.0] [cxt 0] Egress port is 1
+[21:45:46.324] [bmv2] [D] [thread 1330] [8.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.324] [bmv2] [D] [thread 1330] [8.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.324] [bmv2] [D] [thread 1330] [8.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.324] [bmv2] [D] [thread 1330] [8.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.324] [bmv2] [D] [thread 1330] [8.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1330] [8.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.324] [bmv2] [D] [thread 1333] [8.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Processing packet received on port 3
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Parser 'parser': start
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700000c
+[21:45:46.324] [bmv2] [T] [thread 1328] [9.0] [cxt 0] Bytes parsed: 14
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.324] [bmv2] [T] [thread 1328] [9.0] [cxt 0] Bytes parsed: 34
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Parser 'parser': end
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.324] [bmv2] [T] [thread 1328] [9.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.324] [bmv2] [T] [thread 1328] [9.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.324] [bmv2] [T] [thread 1328] [9.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.324] [bmv2] [T] [thread 1328] [9.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.324] [bmv2] [D] [thread 1328] [9.0] [cxt 0] Egress port is 1
+[21:45:46.324] [bmv2] [D] [thread 1330] [9.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.324] [bmv2] [D] [thread 1330] [9.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.324] [bmv2] [D] [thread 1330] [9.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.324] [bmv2] [D] [thread 1330] [9.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.324] [bmv2] [D] [thread 1330] [9.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1330] [9.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.324] [bmv2] [D] [thread 1333] [9.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Processing packet received on port 4
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Parser 'parser': start
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700001c
+[21:45:46.324] [bmv2] [T] [thread 1328] [10.0] [cxt 0] Bytes parsed: 14
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.324] [bmv2] [T] [thread 1328] [10.0] [cxt 0] Bytes parsed: 34
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Parser 'parser': end
+[21:45:46.324] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.325] [bmv2] [T] [thread 1328] [10.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.325] [bmv2] [T] [thread 1328] [10.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.325] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.325] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.325] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.325] [bmv2] [T] [thread 1328] [10.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.325] [bmv2] [T] [thread 1328] [10.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.325] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.325] [bmv2] [D] [thread 1328] [10.0] [cxt 0] Egress port is 1
+[21:45:46.325] [bmv2] [D] [thread 1330] [10.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.325] [bmv2] [D] [thread 1330] [10.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.325] [bmv2] [D] [thread 1330] [10.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.325] [bmv2] [D] [thread 1330] [10.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.325] [bmv2] [D] [thread 1330] [10.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.325] [bmv2] [D] [thread 1330] [10.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.325] [bmv2] [D] [thread 1333] [10.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Processing packet received on port 5
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Parser 'parser': start
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000010
+[21:45:46.325] [bmv2] [T] [thread 1328] [11.0] [cxt 0] Bytes parsed: 14
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.325] [bmv2] [T] [thread 1328] [11.0] [cxt 0] Bytes parsed: 34
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Parser 'parser': end
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.325] [bmv2] [T] [thread 1328] [11.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.325] [bmv2] [T] [thread 1328] [11.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.325] [bmv2] [T] [thread 1328] [11.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.325] [bmv2] [T] [thread 1328] [11.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.325] [bmv2] [D] [thread 1328] [11.0] [cxt 0] Egress port is 1
+[21:45:46.325] [bmv2] [D] [thread 1330] [11.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.325] [bmv2] [D] [thread 1330] [11.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.325] [bmv2] [D] [thread 1330] [11.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.325] [bmv2] [D] [thread 1330] [11.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.325] [bmv2] [D] [thread 1330] [11.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.325] [bmv2] [D] [thread 1330] [11.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.325] [bmv2] [D] [thread 1333] [11.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Processing packet received on port 6
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Parser 'parser': start
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000008
+[21:45:46.325] [bmv2] [T] [thread 1328] [12.0] [cxt 0] Bytes parsed: 14
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.325] [bmv2] [T] [thread 1328] [12.0] [cxt 0] Bytes parsed: 34
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Parser 'parser': end
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.325] [bmv2] [T] [thread 1328] [12.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.325] [bmv2] [T] [thread 1328] [12.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.325] [bmv2] [T] [thread 1328] [12.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.325] [bmv2] [T] [thread 1328] [12.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.325] [bmv2] [D] [thread 1328] [12.0] [cxt 0] Egress port is 1
+[21:45:46.331] [bmv2] [D] [thread 1330] [12.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.331] [bmv2] [D] [thread 1330] [12.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.331] [bmv2] [D] [thread 1330] [12.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.331] [bmv2] [D] [thread 1330] [12.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.331] [bmv2] [D] [thread 1330] [12.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.331] [bmv2] [D] [thread 1330] [12.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.331] [bmv2] [D] [thread 1333] [12.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Processing packet received on port 7
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Parser 'parser': start
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Extracting header 'ethernet'
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000012
+[21:45:46.331] [bmv2] [T] [thread 1328] [13.0] [cxt 0] Bytes parsed: 14
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Extracting header 'ipv4'
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:46.331] [bmv2] [T] [thread 1328] [13.0] [cxt 0] Bytes parsed: 34
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Parser 'parser': end
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Pipeline 'ingress': start
+[21:45:46.331] [bmv2] [T] [thread 1328] [13.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:46.331] [bmv2] [T] [thread 1328] [13.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:46.331] [bmv2] [T] [thread 1328] [13.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:46.331] [bmv2] [T] [thread 1328] [13.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Pipeline 'ingress': end
+[21:45:46.331] [bmv2] [D] [thread 1328] [13.0] [cxt 0] Egress port is 1
+[21:45:46.331] [bmv2] [D] [thread 1330] [13.0] [cxt 0] Pipeline 'egress': start
+[21:45:46.331] [bmv2] [D] [thread 1330] [13.0] [cxt 0] Pipeline 'egress': end
+[21:45:46.331] [bmv2] [D] [thread 1330] [13.0] [cxt 0] Deparser 'deparser': start
+[21:45:46.331] [bmv2] [D] [thread 1330] [13.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:46.331] [bmv2] [D] [thread 1330] [13.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:46.331] [bmv2] [D] [thread 1330] [13.0] [cxt 0] Deparser 'deparser': end
+[21:45:46.331] [bmv2] [D] [thread 1333] [13.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.326] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Processing packet received on port 1
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Parser 'parser': start
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000014
+[21:45:47.327] [bmv2] [T] [thread 1328] [14.0] [cxt 0] Bytes parsed: 14
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.327] [bmv2] [T] [thread 1328] [14.0] [cxt 0] Bytes parsed: 34
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Parser 'parser': end
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.327] [bmv2] [T] [thread 1328] [14.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.327] [bmv2] [T] [thread 1328] [14.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.327] [bmv2] [T] [thread 1328] [14.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.327] [bmv2] [T] [thread 1328] [14.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.327] [bmv2] [D] [thread 1328] [14.0] [cxt 0] Egress port is 1
+[21:45:47.327] [bmv2] [D] [thread 1330] [14.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.327] [bmv2] [D] [thread 1330] [14.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.327] [bmv2] [D] [thread 1330] [14.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.327] [bmv2] [D] [thread 1330] [14.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.327] [bmv2] [D] [thread 1330] [14.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.327] [bmv2] [D] [thread 1330] [14.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.327] [bmv2] [D] [thread 1333] [14.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Processing packet received on port 2
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Parser 'parser': start
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000005
+[21:45:47.327] [bmv2] [T] [thread 1328] [15.0] [cxt 0] Bytes parsed: 14
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.327] [bmv2] [T] [thread 1328] [15.0] [cxt 0] Bytes parsed: 34
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Parser 'parser': end
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.327] [bmv2] [T] [thread 1328] [15.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.327] [bmv2] [T] [thread 1328] [15.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.327] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.327] [bmv2] [T] [thread 1328] [15.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.327] [bmv2] [T] [thread 1328] [15.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.328] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.328] [bmv2] [D] [thread 1328] [15.0] [cxt 0] Egress port is 1
+[21:45:47.328] [bmv2] [D] [thread 1330] [15.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.328] [bmv2] [D] [thread 1330] [15.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.328] [bmv2] [D] [thread 1330] [15.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.328] [bmv2] [D] [thread 1330] [15.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.328] [bmv2] [D] [thread 1330] [15.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.328] [bmv2] [D] [thread 1330] [15.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.328] [bmv2] [D] [thread 1333] [15.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Processing packet received on port 3
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Parser 'parser': start
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700000c
+[21:45:47.328] [bmv2] [T] [thread 1328] [16.0] [cxt 0] Bytes parsed: 14
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.328] [bmv2] [T] [thread 1328] [16.0] [cxt 0] Bytes parsed: 34
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Parser 'parser': end
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.328] [bmv2] [T] [thread 1328] [16.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.328] [bmv2] [T] [thread 1328] [16.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.328] [bmv2] [T] [thread 1328] [16.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.328] [bmv2] [T] [thread 1328] [16.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.328] [bmv2] [D] [thread 1328] [16.0] [cxt 0] Egress port is 1
+[21:45:47.328] [bmv2] [D] [thread 1330] [16.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.328] [bmv2] [D] [thread 1330] [16.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.328] [bmv2] [D] [thread 1330] [16.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.328] [bmv2] [D] [thread 1330] [16.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.328] [bmv2] [D] [thread 1330] [16.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.328] [bmv2] [D] [thread 1330] [16.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.328] [bmv2] [D] [thread 1333] [16.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Processing packet received on port 4
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Parser 'parser': start
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700001c
+[21:45:47.329] [bmv2] [T] [thread 1328] [17.0] [cxt 0] Bytes parsed: 14
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.329] [bmv2] [T] [thread 1328] [17.0] [cxt 0] Bytes parsed: 34
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Parser 'parser': end
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.329] [bmv2] [T] [thread 1328] [17.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.329] [bmv2] [T] [thread 1328] [17.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.329] [bmv2] [T] [thread 1328] [17.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.329] [bmv2] [T] [thread 1328] [17.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.329] [bmv2] [D] [thread 1328] [17.0] [cxt 0] Egress port is 1
+[21:45:47.339] [bmv2] [D] [thread 1330] [17.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.339] [bmv2] [D] [thread 1330] [17.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.339] [bmv2] [D] [thread 1330] [17.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.339] [bmv2] [D] [thread 1330] [17.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.339] [bmv2] [D] [thread 1330] [17.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.339] [bmv2] [D] [thread 1330] [17.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.339] [bmv2] [D] [thread 1333] [17.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Processing packet received on port 5
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Parser 'parser': start
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000010
+[21:45:47.340] [bmv2] [T] [thread 1328] [18.0] [cxt 0] Bytes parsed: 14
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.340] [bmv2] [T] [thread 1328] [18.0] [cxt 0] Bytes parsed: 34
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Parser 'parser': end
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.340] [bmv2] [T] [thread 1328] [18.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.340] [bmv2] [T] [thread 1328] [18.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.340] [bmv2] [T] [thread 1328] [18.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.340] [bmv2] [T] [thread 1328] [18.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.340] [bmv2] [D] [thread 1328] [18.0] [cxt 0] Egress port is 1
+[21:45:47.340] [bmv2] [D] [thread 1330] [18.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.340] [bmv2] [D] [thread 1330] [18.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.340] [bmv2] [D] [thread 1330] [18.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.340] [bmv2] [D] [thread 1330] [18.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.340] [bmv2] [D] [thread 1330] [18.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.340] [bmv2] [D] [thread 1330] [18.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.340] [bmv2] [D] [thread 1333] [18.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.340] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Processing packet received on port 6
+[21:45:47.340] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Parser 'parser': start
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000008
+[21:45:47.341] [bmv2] [T] [thread 1328] [19.0] [cxt 0] Bytes parsed: 14
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.341] [bmv2] [T] [thread 1328] [19.0] [cxt 0] Bytes parsed: 34
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Parser 'parser': end
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.341] [bmv2] [T] [thread 1328] [19.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.341] [bmv2] [T] [thread 1328] [19.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.341] [bmv2] [T] [thread 1328] [19.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.341] [bmv2] [T] [thread 1328] [19.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.341] [bmv2] [D] [thread 1328] [19.0] [cxt 0] Egress port is 1
+[21:45:47.341] [bmv2] [D] [thread 1330] [19.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.341] [bmv2] [D] [thread 1330] [19.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.341] [bmv2] [D] [thread 1330] [19.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.341] [bmv2] [D] [thread 1330] [19.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.341] [bmv2] [D] [thread 1330] [19.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.341] [bmv2] [D] [thread 1330] [19.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.341] [bmv2] [D] [thread 1333] [19.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Processing packet received on port 7
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Parser 'parser': start
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Extracting header 'ethernet'
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000012
+[21:45:47.341] [bmv2] [T] [thread 1328] [20.0] [cxt 0] Bytes parsed: 14
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Extracting header 'ipv4'
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:47.341] [bmv2] [T] [thread 1328] [20.0] [cxt 0] Bytes parsed: 34
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Parser 'parser': end
+[21:45:47.341] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Pipeline 'ingress': start
+[21:45:47.342] [bmv2] [T] [thread 1328] [20.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:47.342] [bmv2] [T] [thread 1328] [20.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:47.342] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:47.342] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:47.342] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:47.342] [bmv2] [T] [thread 1328] [20.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:47.342] [bmv2] [T] [thread 1328] [20.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:47.342] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Pipeline 'ingress': end
+[21:45:47.342] [bmv2] [D] [thread 1328] [20.0] [cxt 0] Egress port is 1
+[21:45:47.342] [bmv2] [D] [thread 1330] [20.0] [cxt 0] Pipeline 'egress': start
+[21:45:47.342] [bmv2] [D] [thread 1330] [20.0] [cxt 0] Pipeline 'egress': end
+[21:45:47.342] [bmv2] [D] [thread 1330] [20.0] [cxt 0] Deparser 'deparser': start
+[21:45:47.342] [bmv2] [D] [thread 1330] [20.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:47.342] [bmv2] [D] [thread 1330] [20.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:47.342] [bmv2] [D] [thread 1330] [20.0] [cxt 0] Deparser 'deparser': end
+[21:45:47.342] [bmv2] [D] [thread 1333] [20.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Processing packet received on port 1
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Parser 'parser': start
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000014
+[21:45:48.327] [bmv2] [T] [thread 1328] [21.0] [cxt 0] Bytes parsed: 14
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.327] [bmv2] [T] [thread 1328] [21.0] [cxt 0] Bytes parsed: 34
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Parser 'parser': end
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.327] [bmv2] [T] [thread 1328] [21.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.327] [bmv2] [T] [thread 1328] [21.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.327] [bmv2] [T] [thread 1328] [21.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.327] [bmv2] [T] [thread 1328] [21.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.327] [bmv2] [D] [thread 1328] [21.0] [cxt 0] Egress port is 1
+[21:45:48.327] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Processing packet received on port 2
+[21:45:48.327] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Parser 'parser': start
+[21:45:48.327] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.327] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.327] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000005
+[21:45:48.328] [bmv2] [T] [thread 1328] [22.0] [cxt 0] Bytes parsed: 14
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.328] [bmv2] [T] [thread 1328] [22.0] [cxt 0] Bytes parsed: 34
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Parser 'parser': end
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.328] [bmv2] [T] [thread 1328] [22.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.328] [bmv2] [T] [thread 1328] [22.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.328] [bmv2] [T] [thread 1328] [22.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.328] [bmv2] [T] [thread 1328] [22.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.328] [bmv2] [D] [thread 1328] [22.0] [cxt 0] Egress port is 1
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Processing packet received on port 3
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Parser 'parser': start
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700000c
+[21:45:48.328] [bmv2] [T] [thread 1328] [23.0] [cxt 0] Bytes parsed: 14
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.328] [bmv2] [T] [thread 1328] [23.0] [cxt 0] Bytes parsed: 34
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Parser 'parser': end
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.328] [bmv2] [T] [thread 1328] [23.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.328] [bmv2] [T] [thread 1328] [23.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.328] [bmv2] [T] [thread 1328] [23.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.328] [bmv2] [T] [thread 1328] [23.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.328] [bmv2] [D] [thread 1328] [23.0] [cxt 0] Egress port is 1
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Processing packet received on port 4
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Parser 'parser': start
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a002700001c
+[21:45:48.328] [bmv2] [T] [thread 1328] [24.0] [cxt 0] Bytes parsed: 14
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.328] [bmv2] [T] [thread 1328] [24.0] [cxt 0] Bytes parsed: 34
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Parser 'parser': end
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.328] [bmv2] [T] [thread 1328] [24.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.328] [bmv2] [T] [thread 1328] [24.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.328] [bmv2] [T] [thread 1328] [24.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.328] [bmv2] [T] [thread 1328] [24.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.328] [bmv2] [D] [thread 1328] [24.0] [cxt 0] Egress port is 1
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Processing packet received on port 5
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Parser 'parser': start
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000010
+[21:45:48.328] [bmv2] [T] [thread 1328] [25.0] [cxt 0] Bytes parsed: 14
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.328] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.329] [bmv2] [T] [thread 1328] [25.0] [cxt 0] Bytes parsed: 34
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Parser 'parser': end
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.329] [bmv2] [T] [thread 1328] [25.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.329] [bmv2] [T] [thread 1328] [25.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.329] [bmv2] [T] [thread 1328] [25.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.329] [bmv2] [T] [thread 1328] [25.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.329] [bmv2] [D] [thread 1328] [25.0] [cxt 0] Egress port is 1
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Processing packet received on port 6
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Parser 'parser': start
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000008
+[21:45:48.329] [bmv2] [T] [thread 1328] [26.0] [cxt 0] Bytes parsed: 14
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.329] [bmv2] [T] [thread 1328] [26.0] [cxt 0] Bytes parsed: 34
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Parser 'parser': end
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.329] [bmv2] [T] [thread 1328] [26.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.329] [bmv2] [T] [thread 1328] [26.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.329] [bmv2] [T] [thread 1328] [26.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.329] [bmv2] [T] [thread 1328] [26.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.329] [bmv2] [D] [thread 1328] [26.0] [cxt 0] Egress port is 1
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Processing packet received on port 7
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Parser 'parser': start
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Extracting header 'ethernet'
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Parser state 'start': key is 080001005e7ffffa0a0027000012
+[21:45:48.329] [bmv2] [T] [thread 1328] [27.0] [cxt 0] Bytes parsed: 14
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Extracting header 'ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:48.329] [bmv2] [T] [thread 1328] [27.0] [cxt 0] Bytes parsed: 34
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Parser 'parser': end
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Pipeline 'ingress': start
+[21:45:48.329] [bmv2] [T] [thread 1328] [27.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is true
+[21:45:48.329] [bmv2] [T] [thread 1328] [27.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.ipv4_forward'
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : effffffa
+
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Table 'FIXP_Switch_Ingress.ipv4_forward': miss
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToController - 
+[21:45:48.329] [bmv2] [T] [thread 1328] [27.0] [cxt 0] Action FIXP_Switch_Ingress.ToController
+[21:45:48.329] [bmv2] [T] [thread 1328] [27.0] [cxt 0] p4src/fixp.p4(251) Primitive standard_metadata.egress_spec = 1
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Pipeline 'ingress': end
+[21:45:48.329] [bmv2] [D] [thread 1328] [27.0] [cxt 0] Egress port is 1
+[21:45:48.329] [bmv2] [D] [thread 1330] [21.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [21.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [21.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [21.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.329] [bmv2] [D] [thread 1330] [21.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1330] [21.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [22.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [22.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [22.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [22.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.329] [bmv2] [D] [thread 1330] [22.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1330] [22.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [23.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [23.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [23.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [23.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.329] [bmv2] [D] [thread 1330] [23.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.329] [bmv2] [D] [thread 1330] [23.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [24.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [24.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.329] [bmv2] [D] [thread 1330] [24.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.329] [bmv2] [D] [thread 1330] [24.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.330] [bmv2] [D] [thread 1330] [24.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.330] [bmv2] [D] [thread 1330] [24.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.330] [bmv2] [D] [thread 1330] [25.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.330] [bmv2] [D] [thread 1330] [25.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.330] [bmv2] [D] [thread 1330] [25.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.330] [bmv2] [D] [thread 1330] [25.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.330] [bmv2] [D] [thread 1330] [25.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.330] [bmv2] [D] [thread 1330] [25.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.330] [bmv2] [D] [thread 1330] [26.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.330] [bmv2] [D] [thread 1330] [26.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.330] [bmv2] [D] [thread 1330] [26.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.330] [bmv2] [D] [thread 1330] [26.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.330] [bmv2] [D] [thread 1330] [26.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.330] [bmv2] [D] [thread 1330] [26.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.330] [bmv2] [D] [thread 1330] [27.0] [cxt 0] Pipeline 'egress': start
+[21:45:48.330] [bmv2] [D] [thread 1330] [27.0] [cxt 0] Pipeline 'egress': end
+[21:45:48.330] [bmv2] [D] [thread 1330] [27.0] [cxt 0] Deparser 'deparser': start
+[21:45:48.330] [bmv2] [D] [thread 1330] [27.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:48.330] [bmv2] [D] [thread 1330] [27.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:48.330] [bmv2] [D] [thread 1330] [27.0] [cxt 0] Deparser 'deparser': end
+[21:45:48.330] [bmv2] [D] [thread 1333] [21.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.332] [bmv2] [D] [thread 1333] [22.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.332] [bmv2] [D] [thread 1333] [23.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.332] [bmv2] [D] [thread 1333] [24.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.332] [bmv2] [D] [thread 1333] [25.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.332] [bmv2] [D] [thread 1333] [26.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:45:48.332] [bmv2] [D] [thread 1333] [27.0] [cxt 0] Transmitting packet of size 216 out of port 1
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Processing packet received on port 2
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Parser 'parser': start
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Extracting header 'ethernet'
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Parser state 'start': key is 0880445453000000080027cefa93
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Bytes parsed: 14
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Parser 'parser' entering state 'parse_etarch'
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Extracting header 'etarch'
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Parser state 'parse_etarch' has no switch, going to default next state
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Bytes parsed: 60
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Parser 'parser': end
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Pipeline 'ingress': start
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is true
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Looking up key:
+* hdr.ethernet.dst    : 445453000000
+
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Table 'FIXP_Switch_Ingress.etarch_forward': miss
+[21:46:08.210] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Action FIXP_Switch_Ingress.ToControllerEtharc
+[21:46:08.210] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Primitive (no source info)
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Primitive (no source info)
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] p4src/fixp.p4(261) Primitive standard_metadata.egress_spec =
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] p4src/fixp.p4(264) Primitive standard_metadata.egress_spec =
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Primitive (no source info)
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Primitive (no source info)
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] Primitive (no source info)
+[21:46:08.211] [bmv2] [T] [thread 1328] [28.0] [cxt 0] p4src/fixp.p4(269) Primitive standard_metadata.egress_spec =
+[21:46:08.211] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Pipeline 'ingress': end
+[21:46:08.211] [bmv2] [D] [thread 1328] [28.0] [cxt 0] Egress port is 1
+[21:46:08.211] [bmv2] [D] [thread 1330] [28.0] [cxt 0] Pipeline 'egress': start
+[21:46:08.211] [bmv2] [D] [thread 1330] [28.0] [cxt 0] Pipeline 'egress': end
+[21:46:08.211] [bmv2] [D] [thread 1330] [28.0] [cxt 0] Deparser 'deparser': start
+[21:46:08.211] [bmv2] [D] [thread 1330] [28.0] [cxt 0] Deparsing header 'ethernet'
+[21:46:08.211] [bmv2] [D] [thread 1330] [28.0] [cxt 0] Deparsing header 'etarch'
+[21:46:08.211] [bmv2] [D] [thread 1330] [28.0] [cxt 0] Deparser 'deparser': end
+[21:46:08.211] [bmv2] [D] [thread 1333] [28.0] [cxt 0] Transmitting packet of size 60 out of port 1
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Processing packet received on port 1
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Parser 'parser': start
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Extracting header 'ethernet'
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Parser state 'start': key is 0880ffffffffffff445453000000
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Bytes parsed: 14
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Parser 'parser' entering state 'parse_etarch_switch'
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Extracting header 'etarch_switch'
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Extracting header 'etarch_switch_2'
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Parser state 'parse_etarch_switch' has no switch, going to default next state
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Bytes parsed: 60
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Parser 'parser': end
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Pipeline 'ingress': start
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is true
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Looking up key:
+* hdr.ethernet.dst    : ffffffffffff
+
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Table 'FIXP_Switch_Ingress.etarch_forward': miss
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Action FIXP_Switch_Ingress.ToControllerEtharc
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Primitive (no source info)
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Primitive (no source info)
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] p4src/fixp.p4(261) Primitive standard_metadata.egress_spec =
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] p4src/fixp.p4(264) Primitive standard_metadata.egress_spec =
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Primitive (no source info)
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Primitive (no source info)
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] Primitive (no source info)
+[21:46:08.271] [bmv2] [T] [thread 1328] [29.0] [cxt 0] p4src/fixp.p4(269) Primitive standard_metadata.egress_spec =
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Pipeline 'ingress': end
+[21:46:08.271] [bmv2] [D] [thread 1328] [29.0] [cxt 0] Egress port is 2
+[21:46:08.271] [bmv2] [D] [thread 1331] [29.0] [cxt 0] Pipeline 'egress': start
+[21:46:08.271] [bmv2] [D] [thread 1331] [29.0] [cxt 0] Pipeline 'egress': end
+[21:46:08.271] [bmv2] [D] [thread 1331] [29.0] [cxt 0] Deparser 'deparser': start
+[21:46:08.271] [bmv2] [D] [thread 1331] [29.0] [cxt 0] Deparsing header 'ethernet'
+[21:46:08.271] [bmv2] [D] [thread 1331] [29.0] [cxt 0] Deparsing header 'etarch_switch_2'
+[21:46:08.271] [bmv2] [D] [thread 1331] [29.0] [cxt 0] Deparser 'deparser': end
+[21:46:08.271] [bmv2] [D] [thread 1333] [29.0] [cxt 0] Transmitting packet of size 55 out of port 2
+[21:46:08.276] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Processing packet received on port 2
+[21:46:08.276] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Parser 'parser': start
+[21:46:08.276] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:08.276] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Extracting header 'ethernet'
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Parser state 'start': key is 0880445453000000080027cefa93
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Bytes parsed: 14
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Parser 'parser' entering state 'parse_etarch'
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Extracting header 'etarch'
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Parser state 'parse_etarch' has no switch, going to default next state
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Bytes parsed: 60
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Parser 'parser': end
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Pipeline 'ingress': start
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is true
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Looking up key:
+* hdr.ethernet.dst    : 445453000000
+
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Table 'FIXP_Switch_Ingress.etarch_forward': miss
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Action FIXP_Switch_Ingress.ToControllerEtharc
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Primitive (no source info)
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Primitive (no source info)
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] p4src/fixp.p4(261) Primitive standard_metadata.egress_spec =
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] p4src/fixp.p4(264) Primitive standard_metadata.egress_spec =
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Primitive (no source info)
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Primitive (no source info)
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] Primitive (no source info)
+[21:46:08.277] [bmv2] [T] [thread 1328] [30.0] [cxt 0] p4src/fixp.p4(269) Primitive standard_metadata.egress_spec =
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Pipeline 'ingress': end
+[21:46:08.277] [bmv2] [D] [thread 1328] [30.0] [cxt 0] Egress port is 1
+[21:46:08.277] [bmv2] [D] [thread 1330] [30.0] [cxt 0] Pipeline 'egress': start
+[21:46:08.277] [bmv2] [D] [thread 1330] [30.0] [cxt 0] Pipeline 'egress': end
+[21:46:08.277] [bmv2] [D] [thread 1330] [30.0] [cxt 0] Deparser 'deparser': start
+[21:46:08.277] [bmv2] [D] [thread 1330] [30.0] [cxt 0] Deparsing header 'ethernet'
+[21:46:08.277] [bmv2] [D] [thread 1330] [30.0] [cxt 0] Deparsing header 'etarch'
+[21:46:08.277] [bmv2] [D] [thread 1330] [30.0] [cxt 0] Deparser 'deparser': end
+[21:46:08.277] [bmv2] [D] [thread 1333] [30.0] [cxt 0] Transmitting packet of size 60 out of port 1
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Processing packet received on port 1
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Parser 'parser': start
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Extracting header 'ethernet'
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Parser state 'start': key is 0880ffffffffffff445453000000
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Bytes parsed: 14
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Parser 'parser' entering state 'parse_etarch_switch'
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Extracting header 'etarch_switch'
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Extracting header 'etarch_switch_2'
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Parser state 'parse_etarch_switch' has no switch, going to default next state
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Bytes parsed: 60
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Parser 'parser': end
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Pipeline 'ingress': start
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is true
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Looking up key:
+* hdr.ethernet.dst    : ffffffffffff
+
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Table 'FIXP_Switch_Ingress.etarch_forward': miss
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Action FIXP_Switch_Ingress.ToControllerEtharc
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Primitive (no source info)
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Primitive (no source info)
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] p4src/fixp.p4(261) Primitive standard_metadata.egress_spec =
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] p4src/fixp.p4(264) Primitive standard_metadata.egress_spec =
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Primitive (no source info)
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Primitive (no source info)
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] Primitive (no source info)
+[21:46:08.286] [bmv2] [T] [thread 1328] [31.0] [cxt 0] p4src/fixp.p4(269) Primitive standard_metadata.egress_spec =
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Pipeline 'ingress': end
+[21:46:08.286] [bmv2] [D] [thread 1328] [31.0] [cxt 0] Egress port is 2
+[21:46:08.286] [bmv2] [D] [thread 1331] [31.0] [cxt 0] Pipeline 'egress': start
+[21:46:08.286] [bmv2] [D] [thread 1331] [31.0] [cxt 0] Pipeline 'egress': end
+[21:46:08.286] [bmv2] [D] [thread 1331] [31.0] [cxt 0] Deparser 'deparser': start
+[21:46:08.286] [bmv2] [D] [thread 1331] [31.0] [cxt 0] Deparsing header 'ethernet'
+[21:46:08.286] [bmv2] [D] [thread 1331] [31.0] [cxt 0] Deparsing header 'etarch_switch_2'
+[21:46:08.286] [bmv2] [D] [thread 1331] [31.0] [cxt 0] Deparser 'deparser': end
+[21:46:08.286] [bmv2] [D] [thread 1333] [31.0] [cxt 0] Transmitting packet of size 55 out of port 2
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Processing packet received on port 2
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Parser 'parser': start
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Extracting header 'ethernet'
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Parser state 'start': key is 0880445453000000080027cefa93
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Bytes parsed: 14
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Parser 'parser' entering state 'parse_etarch'
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Extracting header 'etarch'
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Parser state 'parse_etarch' has no switch, going to default next state
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Bytes parsed: 60
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Parser 'parser': end
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Pipeline 'ingress': start
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is true
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Looking up key:
+* hdr.ethernet.dst    : 445453000000
+
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Table 'FIXP_Switch_Ingress.etarch_forward': miss
+[21:46:08.290] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Action FIXP_Switch_Ingress.ToControllerEtharc
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Primitive (no source info)
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Primitive (no source info)
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] p4src/fixp.p4(261) Primitive standard_metadata.egress_spec =
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] p4src/fixp.p4(264) Primitive standard_metadata.egress_spec =
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Primitive (no source info)
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Primitive (no source info)
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] Primitive (no source info)
+[21:46:08.290] [bmv2] [T] [thread 1328] [32.0] [cxt 0] p4src/fixp.p4(269) Primitive standard_metadata.egress_spec =
+[21:46:08.291] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Pipeline 'ingress': end
+[21:46:08.291] [bmv2] [D] [thread 1328] [32.0] [cxt 0] Egress port is 1
+[21:46:08.291] [bmv2] [D] [thread 1330] [32.0] [cxt 0] Pipeline 'egress': start
+[21:46:08.291] [bmv2] [D] [thread 1330] [32.0] [cxt 0] Pipeline 'egress': end
+[21:46:08.291] [bmv2] [D] [thread 1330] [32.0] [cxt 0] Deparser 'deparser': start
+[21:46:08.291] [bmv2] [D] [thread 1330] [32.0] [cxt 0] Deparsing header 'ethernet'
+[21:46:08.291] [bmv2] [D] [thread 1330] [32.0] [cxt 0] Deparsing header 'etarch'
+[21:46:08.291] [bmv2] [D] [thread 1330] [32.0] [cxt 0] Deparser 'deparser': end
+[21:46:08.291] [bmv2] [D] [thread 1333] [32.0] [cxt 0] Transmitting packet of size 60 out of port 1
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Processing packet received on port 1
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Parser 'parser': start
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Extracting header 'ethernet'
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Parser state 'start': key is 0900464958500000445453410000
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] Bytes parsed: 14
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Parser 'parser': end
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Pipeline 'ingress': start
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is false
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] p4src/fixp.p4(435) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x1235)" (node_8) is false
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] p4src/fixp.p4(439) Condition "hdr.ng.isValid()" (node_10) is false
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] Applying table 'tbl_dropPrimitive'
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Looking up key:
+
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Table 'tbl_dropPrimitive': miss
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Action entry is FIXP_Switch_Ingress.dropPrimitive - 
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] Action FIXP_Switch_Ingress.dropPrimitive
+[21:46:08.346] [bmv2] [T] [thread 1328] [33.0] [cxt 0] p4src/fixp.p4(22) Primitive 0x1ff; ...
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Pipeline 'ingress': end
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Egress port is 511
+[21:46:08.346] [bmv2] [D] [thread 1328] [33.0] [cxt 0] Dropping packet at the end of ingress
+[21:46:09.404] [bmv2] [T] [thread 1340] bm_get_config
+[21:46:09.455] [bmv2] [T] [thread 1340] bm_mc_mgrp_create
+[21:46:09.455] [bmv2] [D] [thread 1340] mgrp node created for mgid 2
+[21:46:09.456] [bmv2] [T] [thread 1340] bm_mc_node_create
+[21:46:09.468] [bmv2] [D] [thread 1340] node created for rid 3
+[21:46:09.776] [bmv2] [T] [thread 1347] bm_get_config
+[21:46:09.781] [bmv2] [T] [thread 1347] bm_mc_node_associate
+[21:46:09.781] [bmv2] [D] [thread 1347] node associated with mgid 2
+[21:46:09.971] [bmv2] [T] [thread 1364] bm_table_add_entry
+[21:46:09.971] [bmv2] [D] [thread 1364] Entry 0 added to table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:09.971] [bmv2] [D] [thread 1364] Dumping entry 0
+Match key:
+* hdr.ethernet.dst    : EXACT     60c5590f72ee
+Action entry: FIXP_Switch_Ingress.etarch_SetSpec_Group - 2,
+
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Processing packet received on port 1
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Parser 'parser': start
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Extracting header 'ethernet'
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Parser state 'start': key is 0900535749544348464958500000
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] Bytes parsed: 14
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Parser 'parser': end
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Pipeline 'ingress': start
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is false
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] p4src/fixp.p4(435) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x1235)" (node_8) is false
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] p4src/fixp.p4(439) Condition "hdr.ng.isValid()" (node_10) is false
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] Applying table 'tbl_dropPrimitive'
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Looking up key:
+
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Table 'tbl_dropPrimitive': miss
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Action entry is FIXP_Switch_Ingress.dropPrimitive - 
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] Action FIXP_Switch_Ingress.dropPrimitive
+[21:46:09.976] [bmv2] [T] [thread 1328] [34.0] [cxt 0] p4src/fixp.p4(22) Primitive 0x1ff; ...
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Pipeline 'ingress': end
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Egress port is 511
+[21:46:09.976] [bmv2] [D] [thread 1328] [34.0] [cxt 0] Dropping packet at the end of ingress
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Processing packet received on port 1
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Parser 'parser': start
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Extracting header 'ethernet'
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Parser state 'start': key is 0880ffffffffffff445453000000
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Bytes parsed: 14
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Parser 'parser' entering state 'parse_etarch_switch'
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Extracting header 'etarch_switch'
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Extracting header 'etarch_switch_2'
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Parser state 'parse_etarch_switch' has no switch, going to default next state
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Bytes parsed: 60
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Parser 'parser': end
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Pipeline 'ingress': start
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] p4src/fixp.p4(425) Condition "hdr.ipv4.isValid()" (node_2) is false
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] p4src/fixp.p4(428) Condition "hdr.raw_switch.isValid()" (node_4) is false
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] p4src/fixp.p4(431) Condition "(hdr.ethernet.isValid()) && (hdr.ethernet.type == 0x0880)" (node_6) is true
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Applying table 'FIXP_Switch_Ingress.etarch_forward'
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Looking up key:
+* hdr.ethernet.dst    : ffffffffffff
+
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Table 'FIXP_Switch_Ingress.etarch_forward': miss
+[21:46:09.989] [bmv2] [D] [thread 1328] [35.0] [cxt 0] Action entry is FIXP_Switch_Ingress.ToControllerEtharc - 
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Action FIXP_Switch_Ingress.ToControllerEtharc
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Primitive (no source info)
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Primitive (no source info)
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] p4src/fixp.p4(261) Primitive standard_metadata.egress_spec =
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] p4src/fixp.p4(264) Primitive standard_metadata.egress_spec =
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Primitive (no source info)
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0] [cxt 0] Primitive (no source info)
+[21:46:09.989] [bmv2] [T] [thread 1328] [35.0

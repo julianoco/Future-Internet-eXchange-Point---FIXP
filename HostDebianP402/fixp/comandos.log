@@ -1,0 +1,369 @@
+    1  shutdown -h now
+    2  ping www.google.com.br
+    3  ifconfig
+    4  ifconfig
+    5  nano /etc/network/interfaces
+    6  reboot
+    7  ifconfig
+    8  ping www.google.com.br
+    9  apt-get net-tools
+   10  apt-get update
+   11  apt-get install net-tools
+   12  ifconfig
+   13  ping 192.168.171.101
+   14  ifconfig
+   15  ifdown enp0s8
+   16  ping 192.168.171.101
+   17  ifup enp0s8
+   18  ls -l
+   19  ls -l
+   20  ls
+   21  vim /etc/network/interfaces
+   22  apt-get install vim
+   23  vim /etc/network/interfaces
+   24  shutdown -h now
+   25  shutdown -h now
+   26  ls
+   27  ls
+   28  ls
+   29  ls -l
+   30  ls
+   31  ifconfig
+   32  ifconfig 192.168.171.101
+   33  ping 192.168.171.101
+   34  ping 192.168.184.101
+   35  ssh 192.168.184.101
+   36  ssh student@192.168.184.101
+   37  ls
+   38  vim /etc/hostname 
+   39  ls
+   40  ls
+   41  vim /etc/hostname 
+   42  reboot
+   43  ifconfig
+   44  table_set_default ipv4_forward drop
+   45  sudo table_set_default ipv4_forward drop
+   46  sudo table_add ipv4_forward ipv4_SetSpec 10.10.10.0/32 => 00:00:00:00:00:01 1
+   47  sudo table_add ipv4_forward ipv4_SetSpec 10.10.10.0/32 => 00:00:00:00:00:01 1
+   48  find -name table_add
+   49  find . -name table_add
+   50  find . -name table_add
+   51  find . -name table_set_default
+   52  find . -name "table_add"
+   53  find . -name "table_add*"
+   54  ssh student@192.168.184.102
+   55  ssh student@192.168.184.101
+   56  ifconfig
+   57  ping 192.168.171.102
+   58  ssh student@192.168.184.101
+   59  ping 192.168.171.102
+   60  ifconfig
+   61  ping 192.168.184.101
+   62  ssh student@192.168.184.101
+   63  ping 192.168.184.101
+   64  ifconfig
+   65  ping 192.168.171.102
+   66  ls
+   67  ls
+   68  ssh student@192.168.184.101
+   69  ls
+   70  ifconfig
+   71  ls
+   72  ssh student@192.168.184.101
+   73  ssh
+   74  apt-get install ssh
+   75  vim /etc/ssh/ssh_config
+   76  vim /etc/ssh/sshd_config
+   77  ls
+   78  ls /etc/ssh/ss*
+   79  apt-get update
+   80  ping www.google.com.br
+   81  apt-get update
+   82  apt-get install ssh
+   83  apt-get install ssh
+   84  netstat
+   85  apt-get install ssh
+   86  apt-get autoremove
+   87  apt-get clean
+   88  apt-get update
+   89  apt-get upgrade
+   90  apt-get install ssh
+   91  ifconfig
+   92  ifdown enp0s3
+   93  apt-get install ssh
+   94  ping www.google.com.br
+   95  ifup enp0s3
+   96  vim /etc/apt/sources.list
+   97  ls
+   98  ls
+   99  ssh student@192.168.184.101
+  100  shutdown -h now
+  101  ifconfig
+  102  ping www.google.com.br
+  103  ls
+  104  ls
+  105  vim /etc/network/interfaces
+  106  ls
+  107  apt-get update
+  108  vim /etc/network/interfaces
+  109  ls
+  110  vim /etc/default/grub
+  111  update-grup
+  112  update-grub
+  113  reboot
+  114  ifconfig
+  115  ifconfig
+  116  vim /etc/network/interfaces
+  117  ping www.google.com.br
+  118  ping 192.168.0.13
+  119  ls
+  120  ping 192.168.0.28
+  121  ifconfig -a
+  122  ifconfig
+  123  ifconfig
+  124  route -n
+  125  ifdown eth1
+  126  ifconfig
+  127  ifconfig eth1 192.168.0.29 netmask 255.255.255.0
+  128  ifconfig
+  129  ping www.google.com.br
+  130  route -n
+  131  route add default gw 192.168.0.1
+  132  route -mn
+  133  route -n
+  134  ping www.google.com.br
+  135  ping 192.168.0.28
+  136  ifconfig
+  137  apt-get update
+  138  apt-get install ssh
+  139  vim /etc/ssh/sshd_config 
+  140  /etc/init.d/ssh restart
+  141  ls
+  142  which python
+  143  apt-get update
+  144  apt-get install python-scapy
+  145  ifconfig
+  146  shutdown -h now
+  147  ls
+  148  cd fixp
+  149  ls
+  150  cd ..
+  151  ifconfig
+  152  vim /etc/network/interfaces
+  153  reboot
+  154  ls
+  155  receive.py
+  156  ls -l
+  157  ls -l rece*
+  158  python receive.py
+  159  ls
+  160  python receive.py
+  161  ifconfig
+  162  ls
+  163  python receive.py
+  164  python send.py 192.168.171.102 0x0800
+  165  python send.py 192.168.171.102 0x0800
+  166  python send.py 192.168.171.102 0x0800
+  167  python send.py 192.168.171.102 0x0800
+  168  python send.py 192.168.171.102 0x0800
+  169  python send.py 192.168.171.102 0x0800
+  170  python send.py 192.168.171.102 0x0800
+  171  python send.py 192.168.171.102 0x0800
+  172  python send.py 192.168.171.102 0x0800
+  173  python send.py 192.168.171.102 0x0800
+  174  python send.py 192.168.171.102 0x0800
+  175  python send.py 192.168.171.102 0x0800
+  176  python send.py 192.168.171.102 0x0800
+  177  python receive.py
+  178  python receive.py > receive.log
+  179  vim receive.log
+  180  python send.py 192.168.171.102 0x0800
+  181  python send.py 192.168.171.102 0x0800
+  182  ifconfig
+  183  python send.py 192.168.171.104 0x0800
+  184  python send.py 192.168.171.104 0x0800
+  185  python send.py 192.168.171.104 0x0800
+  186  python send.py 192.168.171.104 0x0800
+  187  python send.py 192.168.171.104 0x0800
+  188  python send.py 192.168.171.104 0x0800
+  189  python send.py 192.168.171.104 0x0800
+  190  python send.py 192.168.171.104 0x0800
+  191  python send.py 192.168.171.104 0x0800
+  192  python send.py BB:BB:BB:BB:BB:BB 0x880
+  193  python send.py BB:BB:BB:BB:BB:BB 0x1234
+  194  python send.py BB:BB:BB:BB:BB:BC 0x1234
+  195  python send.py BB:BB:BB:BB:BB:BB 0x1234
+  196  python send.py BB:BB:BB:BB:BB:BB 0x0880
+  197  python send.py BB:BB:BB:BB:BB:BB 0x0880
+  198  python send.py BB:BB:BB:BB:BB:BB 0x0880
+  199  python send.py BB:BB:BB:BB:BB:BC 0x0880
+  200  python send.py BB:BB:BB:BB:BB:BC 0x0880
+  201  python send.py BB:BB:BB:BB:BB:BC 0x0880
+  202  python send.py BB:BB:BB:BB:BB:BB 0x0880
+  203  shutdown -h now
+  204  ifconfig
+  205  route -n
+  206  vim /etc/network/interfaces
+  207  ifdown eth1
+  208  ifconfig
+  209  ifup eth1
+  210  ifconfig
+  211  route -n
+  212  ping www.google.com.br
+  213  ping 192.168.0.28
+  214  ping 192.168.0.13
+  215  ls
+  216  ifconfig
+  217  ping 192.168.184.101
+  218  apt-get install python-scapy
+  219  phyton 
+  220  which
+  221  which python
+  222  python
+  223  ls
+  224  cd fixp
+  225  ls
+  226  ls rece
+  227  ls rece*
+  228  ls rece*
+  229  python receive.py
+  230  ./receive.py
+  231  ./receive.py
+  232  ls
+  233  ls
+  234  ls rece*
+  235  ./receive.py
+  236  sudo ./receive.py
+  237  sudo
+  238  su
+  239  send receive.py
+  240  ls
+  241  cd fixp
+  242  send receive.py
+  243  python receive.py
+  244  python receive.py
+  245  ifconfig
+  246  ls
+  247  ls
+  248  cd fixp
+  249  ls
+  250  ./receive.py
+  251  python receive.py
+  252  sudo python receive.py
+  253  python receive.py
+  254  a
+  255  python receive.py
+  256  python receive.py
+  257  python receive.py
+  258  ls
+  259  python receive.py
+  260  ifconfig
+  261  python receive.py
+  262  ifconfig
+  263  python receive.py
+  264  python receive.py
+  265  python receive.py
+  266  shutdown -h now
+  267  ifconfig
+  268  ls
+  269  ls
+  270  ls
+  271  cdfixp
+  272  ls
+  273  cd fixp
+  274  ls
+  275  ls
+  276  python receive.py
+  277  python receive.py
+  278  python receive.py
+  279  python receive.py
+  280  python receive.py
+  281  ifdown eth02
+  282  ifdown eth01
+  283  ifconfig
+  284  ifdown eth1
+  285  python receive.py
+  286  python receive.py
+  287  ifconfig
+  288  shutdown -h now
+  289  ls
+  290  ls
+  291  cd fixp
+  292  ls
+  293  ifconfig
+  294  ifdown eth
+  295  ifdown eth1
+  296  ifconfig -a
+  297  ifconfig /a
+  298  ifconfig -a
+  299  ifconfig 
+  300  python receive.py
+  301  ls
+  302  mkdir history
+  303  mv history.* ./arquivos
+  304  rm history
+  305  rm -r history
+  306  mkdir arquivos
+  307  mv history.* ./arquivos
+  308  ls
+  309  ls -la
+  310  ls history
+  311  ls history.*
+  312  ls
+  313  ls history
+  314  ls history.*
+  315  history > history.txt
+  316  mv history.* ./arquivos
+  317  ls
+  318  ls
+  319  python receive
+  320  python receive.py
+  321  python send.py 192.168.171.101 0x0800
+  322  python send.py 192.168.171.104 0x0800
+  323  python send.py BB:BB:BB:BB:BB:BB 0x0800
+  324  python send.py BB:BB:BB:BB:BB:BB 0x1234
+  325  python send.py BB:BB:BB:BB:BB:BB 0x1234
+  326  python send.py BB:BB:BB:BB:BB:BB 0x1234
+  327  python send.py BB:BB:BB:BB:BB:BB 0x880
+  328  python receive.py
+  329  python send.py 192.168.171.104 0x0800
+  330  python send.py 192.168.171.104 0x0800
+  331  python send.py 192.168.171.104 0x0800
+  332  python send.py 192.168.171.104 0x0800
+  333  python send.py 192.168.171.104 0x0800
+  334  python send.py 192.168.171.104 0x0800
+  335  python send.py 192.168.171.104 0x0800
+  336  python send.py 192.168.171.104 0x0800
+  337  python send.py 192.168.171.104 0x0800
+  338  python send.py 192.168.171.104 0x0800
+  339  python send.py 192.168.171.104 0x0800
+  340  python receive.py
+  341  python send.py 192.168.171.104 0x0800
+  342  python send.py 192.168.171.104 0x0800
+  343  python send.py 192.168.171.104 0x0800
+  344  python send.py 192.168.171.104 0x0800
+  345  python send.py 192.168.171.104 0x0800
+  346  python send.py 192.168.171.104 0x0800
+  347  python send.py 192.168.171.104 0x0800
+  348  shutdown -h now
+  349  ifconfig
+  350  rootls
+  351  ls
+  352  ifconfig
+  353  vim /etc/network/interfaces
+  354  reboot
+  355  ifconfig.
+  356  ifconfi
+  357  ping 192.168.184.101
+  358  ifconfig
+  359  ping 192.168.184.101
+  360  shutdown -h now
+  361  ifconfig
+  362  ping 192.168.184.101
+  363  ping 192.168.184.101
+  364  ping 192.168.184.101
+  365  ls
+  366  ls
+  367  cd fixp
+  368  history comandos.log
+  369  history > comandos.log

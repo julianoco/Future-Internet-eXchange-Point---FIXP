@@ -1,0 +1,500 @@
+   50  gedit dts_pb2.py
+   51  ls
+   52  lz
+   53  ls
+   54  cd fixp
+   55  ls
+   56  cd ..
+   57  ~~~
+   58  shutdown -h now
+   59  shutdown -h now
+   60  cd fixp/etarch/dts-client/
+   61  ls
+   62  ls
+   63  gedit SBBNEConnector.py
+   64  gedit SBBNEConnector.py
+   65  cd fixp/etarch/dts-client/
+   66  ls
+   67  python dtsa.py 
+   68  python dtsa.py 
+   69  python dtsa.py 
+   70  wireshark
+   71  shutdown -h now
+   72  cd fixp
+   73  ls
+   74  python dtsa.py 
+   75  cd etarch/dts-client/
+   76  python dtsa.py 
+   77  python dtsa.py 
+   78  python dtsa.py 
+   79  python dtsa.py 
+   80  python dtsa.py 
+   81  python dtsa.py 
+   82  python dtsa.py 
+   83  python dtsa.py 
+   84  python dtsa.py 
+   85  python dtsa.py 
+   86  python dtsa.py 
+   87  python dtsa.py 
+   88  python dtsa.py 
+   89  python dtsa.py 
+   90  ls
+   91  cd fixp
+   92  ls
+   93  wireshark
+   94  cd fixp/etarch/dts-client/
+   95  python dtsa.py 
+   96  python dtsa.py 
+   97  python dtsa.py 
+   98  python dtsa.py 
+   99  python dtsa.py 
+  100  python dtsa.py 
+  101  cd fixp/etarch/dts-client/
+  102  wireshark
+  103  wireshark
+  104  wireshark
+  105  ls
+  106  ls
+  107  shutdown -h now
+  108  cd fixp/etarch/dts-client/
+  109  ls
+  110  gedit SBBNEConnector.py
+  111  cd fixp/etarch/dts-client/
+  112  wiresahrk
+  113  wiresahrk
+  114  wireshark
+  115  wireshark
+  116  wireshark
+  117  cd fixp/etarch/dts-client/
+  118  python dtsa.py 
+  119  python dtsa.py 
+  120  python dtsa.py 
+  121  python dtsa.py 
+  122  python dtsa.py 
+  123  python dtsa.py 
+  124  python dtsa.py 
+  125  python dtsa.py 
+  126  wireshark
+  127  shutdown -h now
+  128  ls]
+  129  ls
+  130  cd fixp
+  131  ls
+  132  cd etarch
+  133  ls -l la
+  134  ls -la dts*
+  135  ls -l dts*
+  136  ls -l dts-*
+  137  ls -l
+  138  ls
+  139  ls dts
+  140  ls -l
+  141  ls -la
+  142  mv dts-client dts-server
+  143  ls
+  144  cd dts-server/
+  145  ls
+  146  shutdown -h now
+  147  lsx
+  148  ls
+  149  cd fixp
+  150  ls
+  151  ls
+  152  vim /etc/hostname 
+  153  shutdown -h now
+  154  cd fixp/etarch/dts-server/
+  155  python dtsa.py 
+  156  python dtsa.py 
+  157  python dtsa.py 
+  158  python dtsa.py 
+  159  python dtsa.py 
+  160  python dtsa.py 
+  161  python dtsa.py 
+  162  python dtsa.py 
+  163  python dtsa.py 
+  164  shutdown -h now
+  165  cd fixp/etarch/dts-server/
+  166  wireshark
+  167  wireshark
+  168  wireshark
+  169  wireshark
+  170  LS
+  171  LS
+  172  ls
+  173  cd fixp
+  174  ls
+  175  cd ..
+  176  cd fixp/etarch/dts-server/
+  177  gedit SBBNEConnector.py
+  178  cd fixp/etarch/dts-server
+  179  python dtsa.py 
+  180  python dtsa.py 
+  181  cd fixp/etarch/dts-client/
+  182  cd fixp/etarch/dts-server/
+  183  wireshark
+  184  shutdown -h now
+  185  cd/
+  186  cd /
+  187  find -name "scapy*"
+  188  cd /usr/bin/scapy
+  189  ls
+  190  ls
+  191  cd fixp
+  192  ls
+  193  cd etarch/dts-server/
+  194  ls
+  195  gedit SBBNEConnector.py
+  196  gedit SBBNEConnector.py
+  197  cd fixp
+  198  cd etarch/
+  199  cd dts-server/
+  200  python dtsa.py 
+  201  wireshark
+  202  shutdown -h now
+  203  cd fixp/etarch/dts-server/
+  204  ls
+  205  ls
+  206  gedit SBBNEConnector.py
+  207  python dtsa.py 
+  208  cd fixp/etarch/dts-server/
+  209  python dtsa.py
+  210  python dtsa.py
+  211  python dtsa.py
+  212  python dtsa.py
+  213  python dtsa.py
+  214  shutdown -h now
+  215  cd fixp/etarch/dts-server/
+  216  ls
+  217  ls
+  218  python dtsa.py 
+  219  python dtsa.py 
+  220  python dtsa.py 
+  221  python dtsa.py 
+  222  python dtsa.py 
+  223  python dtsa.py 
+  224  python dtsa.py 
+  225  cd fixp/etarch/dts-server/
+  226  cat dtsa.py 
+  227  gedit SBBNEConnector.py
+  228  gedit SBBNEConnector.py
+  229  shutdown -h now
+  230  cd fixp/dtsa
+  231  cd fixp
+  232  cd etarch/
+  233  ls
+  234  cd dts-server/
+  235  python dtsa.py 
+  236  wireshark
+  237  cd fixp/etarch/dts-server/
+  238  python dtsa.py 
+  239  python dtsa.py 
+  240  python dtsa.py 
+  241  shutdown -h now
+  242  cd etar
+  243  cd fixp
+  244  cd etarch/
+  245  ls
+  246  cd dts-server/
+  247  cd ..
+  248  cd ..
+  249  ls
+  250  cd IP
+  251  cd etarch/
+  252  cd dts-server/
+  253  ls
+  254  gedit SBBNEConnector.py
+  255  ls
+  256  cd backups/
+  257  ls
+  258  cd ..
+  259  ls
+  260  cd backups
+  261  ls
+  262  ls
+  263  ls
+  264  ls
+  265  cd ..
+  266  ls
+  267  ls
+  268  cd fixp
+  269  ls
+  270  ls
+  271  cd  etarch/
+  272  cd..
+  273  cd IP
+  274  cd ..
+  275  cd IP
+  276  ls
+  277  cd IP
+  278  cd etarch/
+  279  ls
+  280  cd dts-server/
+  281  ls
+  282  ls
+  283  cd ..
+  284  cd ..
+  285  ls
+  286  cd etarch/l
+  287  cd etarch/
+  288  LS
+  289  ls
+  290  cd d
+  291  shutdown -h now
+  292  cd fixp
+  293  cd etarch/
+  294  ls
+  295  cd dts-server/
+  296  ls
+  297  python dtsa.py 
+  298  cd fixp
+  299  cd labs
+  300  ls
+  301  cd etarch/dts-server/
+  302  lsx
+  303  ls
+  304  wireshark
+  305  wireshark
+  306  shutdown -h now
+  307  ls
+  308  cd fixp
+  309  ls
+  310  cd etarch/
+  311  ls
+  312  cd dts-server/
+  313  ls
+  314  gedit SBBNEConnector.py
+  315  shutdown -h now
+  316  ifconfig
+  317  lsc
+  318  lsc() ;
+  319  ls
+  320  cd fixp
+  321  ls
+  322  ls -l | ^d
+  323  ls -l | grep ^d
+  324  cd etarch/dts-server/
+  325  ls
+  326  gedit SBBNEConnector.py
+  327  cd fixp/etarch/dts-server/
+  328  ls dtsa.py
+  329  history
+  330  python dtsa.py
+  331  cd /fixp/etarch/dts-server
+  332  cd /fixp/etarch/dts-server
+  333  cd fixp/etarch/dts-server
+  334  ls
+  335  gedit SBBNEConnector.py
+  336  ls
+  337  cd fixp
+  338  cd etarch
+  339  ls
+  340  cd dts-server
+  341  ls
+  342  cat multipleControllers.py 
+  343  ls
+  344  ls
+  345  ls -l
+  346  cd backups/
+  347  ls
+  348  cd ..
+  349  ls
+  350  gedit dtsa.py
+  351  gedit dtsa.py
+  352  ipconfig
+  353  ifconfig
+  354  exit
+  355  cd /sys/class/net
+  356  ls
+  357  cd fixp
+  358  ls
+  359  cd etarch/
+  360  cd dts-server/
+  361  ls
+  362  gedit SBBNEConnector.py
+  363  cd fixp/etarch/dts-
+  364  cd fixp/etarch/dts-server/
+  365  python dtsa.py 
+  366  python dtsa.py 
+  367  python dtsa.py 
+  368  python dtsa.py 
+  369  python dtsa.py 
+  370  python dtsa.py 
+  371  python dtsa.py 
+  372  cd fixp/etarch/dts-
+  373  cd fixp/etarch/dts-
+  374  cd fixp/etarch/dts-server/
+  375  gedit dtsa.py 
+  376  cd fixp/etarch/dts-server/
+  377  python dtsa.py
+  378  python dtsa.py
+  379  cd fixp
+  380  ls
+  381  cd etarch/dts-server/
+  382  gedit dtsa.py 
+  383  cd fixp/etarch/dts-server/
+  384  gedit SBBNEConnector.py
+  385  cd fixp/etarch/dts-server/
+  386  cd fixp/etarch/dts-server/
+  387  ls
+  388  gedit chat.py 
+  389  cd fixp/etarch/dts-server/
+  390  gedit SBBNEConnector.py
+  391  cd fixp/etarch/dts-server/
+  392  ls
+  393  gedit
+  394  gedit dtsas.
+  395  gedit dtsa.py 
+  396  cd fixp/etarch/dts-server/
+  397  gedit SBBNEConnector.py
+  398  cd fixp/etarch/dts-server/
+  399  wireshark
+  400  cd fixp/etarch/dts-server/
+  401  gedit SBBNEConnector.py
+  402  cd fixp/etarch/dts-server/
+  403  ls
+  404  gedit dtsa.py 
+  405  cd fixp/etarch/dts-server/
+  406  cd fixp/etarch/dts-server/
+  407  python dtsa.py
+  408  cd fixp/etarch/dts-server/
+  409  ls
+  410  cd ..
+  411  vim /etc/hostname 
+  412  ifconfig
+  413  ls
+  414  cd fixp
+  415  ls
+  416  cd ..
+  417  ifconfig
+  418  ~reboot
+  419  reboot
+  420  cd fixp/etarch/dts-server/
+  421  python dtsa.py
+  422  cd fixp
+  423  cd ..
+  424  cd fixp/etarch/dts-server/
+  425  python dtsa.py
+  426  python dtsa.py
+  427  python dtsa.py
+  428  cd fixp/etarch/dts-server/
+  429  gedit SBBNEConnector.py
+  430  cd fixp/etarch/dts-server/
+  431  python dtsa.py
+  432  python dtsa.py
+  433  python dtsa.py
+  434  python dtsa.py
+  435  python dtsa.py
+  436  python dtsa.py
+  437  python dtsa.py
+  438  python dtsa.py
+  439  python dtsa.py
+  440  cd fixp/etarch/dts-server/
+  441  gedit SBBNEConnector.py
+  442  gedit SBBNEConnector.py
+  443  gedit SBBNEConnector.py
+  444  python dtsa.py
+  445  cd fixp/etarch/dts-server/
+  446  python dtsa.py
+  447  python dtsa.py
+  448  python dtsa.py
+  449  shutdown -h now
+  450  cd fixp/etarch/dts-server/
+  451  python dtsa.py
+  452  python dtsa.py
+  453  python dtsa.py
+  454  python dtsa.py
+  455  python dtsa.py
+  456  cd fixp/etarch/dts-server/
+  457  gedit SBBNEConnector.py
+  458  python dtsa.py
+  459  cd fixp/etarch/
+  460  cd dts-server/
+  461  python dtsa.py
+  462  python dtsa.py
+  463  python dtsa.py
+  464  python dtsa.py
+  465  python dtsa.py
+  466  python dtsa.py
+  467  python dtsa.py
+  468  python dtsa.py
+  469  CD fixp
+  470  cd fixp
+  471  cd etarch/dts
+  472  cd etarch/dts-server/
+  473  ls
+  474  gedit SBBNEConnector.py
+  475  cd fixp/etarch/dts-server/
+  476  ls
+  477  gedit SBBNEConnector.py
+  478  gedit SBBNEConnector.
+  479  gedit SBBNEConnector.py
+  480  gedit SBBNEConnector.py
+  481  cd fixp
+  482  ls
+  483  cd etarch/dts-server/
+  484  python dtsa.py
+  485  python dtsa.py
+  486  gedit SBBNEConnector.py
+  487  ls
+  488  cp SBBNEConnector.py SBBNEConnector.bk1.py
+  489  ls SBBNEConnector*
+  490  gedit SBBNEConnector.py
+  491  gedit SBBNEConnector.py
+  492  gedit SBBNEConnector.
+  493  gedit SBBNEConnector.py
+  494  gedit SBBNEConnector.
+  495  gedit SBBNEConnector.py
+  496  shutdown -h now
+  497  cd fixp/etarch/
+  498  python dtsa.py
+  499  cd dts-server/
+  500  python dtsa.py
+  501  clear
+  502  ls -l
+  503  ifconfig
+  504  ping www.google.com.br
+  505  clear
+  506  ls -la
+  507  clear
+  508  ls -l
+  509  clear
+  510  ls -la
+  511  clear
+  512  ls 
+  513  ls -l
+  514  cd backups/
+  515  ls
+  516  cd versao_p4_runtime_01/
+  517  ls
+  518  cd fixp
+  519  ls
+  520  cd /
+  521  clear
+  522  ls -l
+  523  clear
+  524  ls -la
+  525  clear
+  526  ls -l
+  527  cd /
+  528  clear
+  529  ls -l
+  530  ls
+  531  cd home
+  532  ls
+  533  cd ~
+  534  pwd
+  535  clear
+  536  ls
+  537  cd fixp
+  538  ls
+  539  cat r2.txt
+  540  cat run_fixp.sh
+  541  cler
+  542  clear
+  543  history
+  544  clear
+  545  ls
+  546  history
+  547  cat history > log_versao_04.txt
+  548  cat history >> log_versao_04.txt
+  549  history > log_versao_04.txt

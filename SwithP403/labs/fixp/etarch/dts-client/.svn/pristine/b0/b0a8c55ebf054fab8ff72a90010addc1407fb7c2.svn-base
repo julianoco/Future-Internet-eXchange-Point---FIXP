@@ -1,0 +1,17 @@
+To run this chat use:
+
+python ./chat.py h1-eth0 entity workspace
+
+where:
+
+h1-eth0 is the interface
+entity: the entity title
+workspace: the workspace title
+
+Para vidoclient (deve ser executado primeiro):
+1. executar o chat, p.ej. em h1: ./chat.py h1-eth0 e1 wor
+2. executar o videoclient dentro do chat: ./videoclient 9cf6:ee:5f:8d:8e:h1-eth0
+
+Para videosever (executar depois do cliente):
+1. executar o chat, p.ej. em h2: ./chat.py h2-eth0 e2 wor
+2. executar o videoserver dentro do chat: ./videoserver blockhead.mp4 9cf6:ee:5f:8d:8e

@@ -1,0 +1,7 @@
+table_set_default ng_forward drop
+table_add ng_forward ng_SetSpec 00:00:00:00:00:01 => 1
+table_add ng_forward ng_SetSpec 00:00:00:00:00:02 => 1
+table_add ng_forward ng_SetSpec 00:00:00:00:00:03 => 1
+table_add ng_forward ng_SetSpec 00:00:00:00:00:04 => 2
+table_add ng_forward ng_SetSpec 00:00:00:00:00:05 => 2
+table_add ng_forward ng_SetSpec 00:00:00:00:00:06 => 2

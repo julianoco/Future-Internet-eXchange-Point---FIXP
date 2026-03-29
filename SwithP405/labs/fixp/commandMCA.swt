@@ -1,0 +1,5 @@
+mc_node_dissociate 2 0
+mc_node_destroy 0
+mc_mgrp_destroy 2
+mc_mgrp_create 2
+mc_node_create 4 2 5 4

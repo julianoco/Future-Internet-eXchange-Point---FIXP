@@ -1,0 +1,2 @@
+assign_device 0 0 -- port = 9090
+table_add FIXP_Switch_Ingress.etarch_forward 60:c5:59:0f:72:ee => FIXP_Switch_Ingress.etarch_SetSpec_Group 2 

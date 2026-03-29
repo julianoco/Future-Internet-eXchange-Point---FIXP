@@ -1,0 +1,5 @@
+table_set_default etarch_forward drop
+table_add etarch_forward etarch_SetSpec AA:AA:AA:AA:AA:AA =>  1
+table_add etarch_forward etarch_SetSpec BB:BB:BB:BB:BB:BB =>  2
+table_add etarch_forward etarch_SetSpec CC:CC:CC:CC:CC:CC =>  3
+table_add etarch_forward etarch_SetSpec DD:DD:DD:DD:DD:DD =>  3

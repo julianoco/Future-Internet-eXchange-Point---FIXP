@@ -1,0 +1,7 @@
+table_set_default ipv4_forward drop
+#table_add ipv4_forward ipv4_SetSpec 10.0.0.1/32 => 00:00:00:00:00:01 1
+table_add ipv4_forward ipv4_SetSpec 10.0.0.2/32 => 00:00:00:00:00:02 2
+table_add ipv4_forward ipv4_SetSpec 10.0.0.3/32 => 00:00:00:00:00:03 3
+table_add ipv4_forward ipv4_SetSpec 10.0.0.4/32 => 00:00:00:00:00:15 4
+table_add ipv4_forward ipv4_SetSpec 10.0.0.5/32 => 00:00:00:00:00:15 4
+table_add ipv4_forward ipv4_SetSpec 10.0.0.6/32 => 00:00:00:00:00:15 4

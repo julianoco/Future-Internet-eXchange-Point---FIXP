@@ -1,0 +1,500 @@
+    9  gedit chat.py
+   10  cd fixp/etarch/dts-client/
+   11  gedit dts.py
+   12  shutdown -h now
+   13  ping www.google.com.br
+   14  cd fixp/etarch/dts-client/
+   15  gedit dts.py
+   16  cd fixp/etarch/dts-client/
+   17  gedit dts.py
+   18  cd fixp/etarch/dts-client/
+   19  wireshark
+   20  wireshark
+   21   cd fixp/etarch/dts-client/
+   22  cd /
+   23  find --name "scapy"
+   24  find -name "scapy*"
+   25  cd ./usr/bin
+   26  scappy
+   27  scapt
+   28  scapy
+   29  python chat.py eth0 e1 w1
+   30  cd fixp/etarch/dts-client/
+   31  cd fixp/etarch/dts-client/
+   32  cd fixp/etarch/dts-client/
+   33  python chat.py eth0 e1 w1
+   34  python chat.py eth0 e1 w1
+   35  python chat.py eth0 e1 w1
+   36  python chat.py eth0 e1 w1
+   37  python chat.py eth0 e1 w1
+   38  python chat.py eth0 e1 w1
+   39  python chat.py eth0 e1 w1
+   40  python chat.py eth0 e1 w1
+   41  python chat.py eth0 e1 w1]
+   42  python chat.py eth0 e1 w1
+   43  python chat.py eth0 e1 w1
+   44  python chat.py eth0 e1 w1
+   45  python chat.py eth0 e1 w1
+   46  python chat.py eth0 e1 w1
+   47  python chat.py eth0 e1 w1
+   48  python chat.py eth0 e1 w1
+   49  python chat.py eth0 e1 w1
+   50  python chat.py eth0 e1 w1
+   51  python chat.py eth0 e1 w1
+   52  python chat.py eth0 e1 w1
+   53  python chat.py eth0 e1 w1
+   54  python chat.py eth0 e1 w1
+   55  python chat.py eth0 e1 w1
+   56  python chat.py eth0 e1 w1
+   57  python chat.py eth0 e1 w1
+   58  python chat.py eth0 e1 w1
+   59  python chat.py eth0 e1 w1
+   60  python chat.py eth0 e1 w1
+   61  python chat.py eth0 e1 w1
+   62  shutdown -h now
+   63  wireshark
+   64  cd fixp
+   65  cd etarch
+   66  gedit dts-client/
+   67  cd dts-client/
+   68  gedit dts
+   69  gedit dts.py
+   70  wireshark
+   71  cd fixp
+   72  cd etarch
+   73  cd dts-client/
+   74  python chat.py eth0 e1 w1
+   75  python chat.py eth0 e1 w1
+   76  python chat.py eth0 e1 w1
+   77  python chat.py eth0 e1 w1
+   78  python chat.py eth0 e1 w1
+   79  python chat.py eth0 e1 w1
+   80  python chat.py eth0 e1 w1
+   81  python chat.py eth0 e1 w1
+   82  python chat.py eth0 e1 w1
+   83  python chat.py eth0 e1 w1
+   84  python chat.py eth0 e1 w1
+   85  python chat.py eth0 e1 w1
+   86  python chat.py eth0 e1 w1
+   87  python chat.py eth0 e1 w1
+   88  python chat.py eth0 e1 w1
+   89  python chat.py eth0 e1 w1
+   90  python chat.py eth0 e1 w1
+   91  python chat.py eth0 e1 w1
+   92  python chat.py eth0 e1 w1
+   93  python chat.py eth0 e1 w1
+   94  python chat.py eth0 e1 w1
+   95  python chat.py eth0 e1 w1
+   96  python chat.py eth0 e1 w1
+   97  python chat.py eth0 e1 w1
+   98  python chat.py eth0 e1 w1
+   99  python chat.py eth0 e1 w1
+  100  python chat.py eth0 e1 w1
+  101  python chat.py eth0 e1 w1
+  102  python chat.py eth0 e1 w1
+  103  python chat.py eth0 e1 w1
+  104  python chat.py eth0 e1 w1
+  105  python chat.py eth0 e1 w1
+  106  python chat.py eth0 e1 w1
+  107  python chat.py eth0 e1 w1
+  108  python chat.py eth0 e1 w1
+  109  python chat.py eth0 e1 w1
+  110  ls
+  111  gedit dts.py
+  112  python chat.py eth0 e1 w1
+  113  python chat.py eth0 e1 w1
+  114  python chat.py eth0 e1 w1
+  115  shutdown -h now
+  116  ping 192.168.191.101
+  117  shutdown -h now
+  118  wireshark
+  119  cd python
+  120  cd fixp
+  121  cd etarch
+  122  cd dts-client/
+  123  ls
+  124  python chat.py eth0 e1 w1
+  125  python chat.py eth0 e1 w1
+  126  shutdwon -h now
+  127  shutdown -h now
+  128  wireshark
+  129  wireshark
+  130  ls
+  131  cd python
+  132  cd fixp/etarch/dts-client/
+  133  python chat.py eth0 e1 w1
+  134  python chat.py eth0 e1 w1
+  135  python chat.py eth0 e1 w1
+  136  python chat.py eth0 e1 w1
+  137  python chat.py eth0 e1 w1
+  138  python chat.py eth0 e1 w1
+  139  python chat.py eth0 e1 w1
+  140  python chat.py eth0 e1 w1
+  141  python chat.py eth0 e1 w1
+  142  python chat.py eth0 e1 w1
+  143  python chat.py eth0 e1 w1
+  144  python chat.py eth0 e1 w1
+  145  python chat.py eth0 e1 w1
+  146  python chat.py eth0 e1 w1
+  147  python chat.py eth0 e1 w1
+  148  python chat.py eth0 e1 w1
+  149  python chat.py eth0 e1 w1
+  150  python chat.py eth0 e1 w1
+  151  python chat.py eth0 e1 w1
+  152  python chat.py eth0 e1 w1
+  153  python chat.py eth0 e1 w1
+  154  shutdown -h now
+  155  wireshark
+  156  cd fixp/etarch/dts-client/
+  157  ls
+  158  python chat.py eth0 e1 w1
+  159  python chat.py eth0 e1 w1
+  160  shutdown -h nopw
+  161  shutdown -h now
+  162  cd fixp/etarch/dts-client/
+  163  wireshark
+  164  wireshark
+  165  wireshark
+  166  wireshark
+  167  wireshark
+  168  cd fixp
+  169  cd etarch/dts-client/
+  170  ls
+  171  python chat.py eth0 e1 w1
+  172  python chat.py eth0 e1 w1
+  173  python chat.py eth0 e1 w1
+  174  python chat.py eth0 e1 w1
+  175  python chat.py eth0 e1 w1
+  176  python chat.py eth0 e1 w1
+  177  python chat.py eth0 e1 w1
+  178  python chat.py eth0 e1 w1
+  179  python chat.py eth0 e1 w1
+  180  shutdown -h now
+  181  cd fixp/etarch/dts-client/
+  182  wireshark
+  183  wireshark
+  184  wireshark
+  185  wireshark
+  186  cd fixp/etarch/dts-client/
+  187  python chat.py eth0 e1 w1
+  188  python chat.py eth0 e1 w1
+  189  shutdown -h now
+  190  cd/
+  191  pwd
+  192  cd /
+  193  find --name "scap*"
+  194  find -name "scap*"
+  195  cd /usr/bin
+  196  scapy
+  197  shutdown -h now
+  198  cd /
+  199  find -name "scapy*"
+  200  cd /usr/bin/scapy
+  201  cd ./usr
+  202  cd bin
+  203  scapy
+  204  ls
+  205  cd /root/fixp/etarch/dts-client/
+  206  python chat.py eth0 e1 w1
+  207  ls
+  208  python chat.py eth0 e1 w1
+  209  python chat.py eth0 e1 w1
+  210  python chat.py eth0 e1 w1
+  211  shutdown -h now
+  212  cd fixp
+  213  cd etarch/dts-client/
+  214  python chat.py eth0 e1 w1
+  215  python chat.py eth0 e1 w1
+  216  python chat.py eth0 e1 w1]
+  217  python chat.py eth0 e1 w1
+  218  python chat.py eth0 e1 w1
+  219  shutdown -h now
+  220  cd fixp
+  221  ls
+  222  ls
+  223  cd etarch/dts-client/
+  224  ls
+  225  cd ..
+  226   cd ..
+  227  ls
+  228  cd etarch/
+  229  cd dts-client/
+  230  wireshark
+  231  wireshark
+  232  cd fixp/etarch/
+  233  ls
+  234  cd dts-client/
+  235  python chat.py eth0 e1 w1
+  236  python chat.py eth0 e1 w1
+  237  python chat.py eth0 e1 w1
+  238  shutdown -h now
+  239  ls
+  240  wireshark
+  241  cd fixp
+  242  ls
+  243  cd etarch/
+  244  ls
+  245  cd dts-client/
+  246  ls
+  247  wireshark
+  248  python chat.py eth0 e1 w1
+  249  shudown -h now
+  250  shutdown -h now
+  251  shutdown -h now
+  252  cd fixp
+  253  cd IP
+  254  ls
+  255  gedit serverIP.py
+  256  cd fixp/etarch/
+  257  ls
+  258  cd dts-client/
+  259  ls
+  260  gedit dts.py
+  261  cd fixp/etarch/dts-client/
+  262  ls
+  263  ls -l |grep ^d
+  264  cd protocol
+  265  ls
+  266  ls -l
+  267  gedit dts_pb2
+  268  gedit etcp_pb2.py
+  269  cd fixp
+  270  ls
+  271  cd etarch/
+  272  ls
+  273  cd dts-client/
+  274  ls
+  275  gedit dts.py
+  276  cd fixp/etarch/dts-client/protocol/
+  277  ls
+  278  gedit etcp_pb2
+  279  ld *.py
+  280  ls *.py -l
+  281  gedit dts_pb2.py
+  282  ls
+  283  cd fixp
+  284  ls
+  285  cd etarch/dts-client/
+  286  ls
+  287  cd  protocol
+  288  gedit dtscp_pb2.py
+  289  cd fixp/etarch/dts-client/
+  290  cd protocol/
+  291  cd ..
+  292  history |grep chat
+  293  history | chat
+  294  history | grep chat
+  295  python chat.py eth0 e1 w1
+  296  python chat.py eth0 e1 w1
+  297  cd fixp/etarch/dts-client/
+  298  cd protocol/
+  299  gedit etcp_pb2.py
+  300  cd fixp/etarch/dts-client/
+  301  gedit dts.py
+  302  ls
+  303  cd fixp
+  304  ls
+  305  cd etarch/dts-client/
+  306  ls
+  307  gedit chat.py
+  308  ls
+  309  cd fixp
+  310  ls
+  311  cd etarch/
+  312  ls
+  313  cd dts-client/
+  314  ls
+  315  cd protocol
+  316  ls -l
+  317  cd fixp/etarch/dts-client/
+  318  cd protocol/
+  319  wireshark
+  320   cd fixp/etarch/dts-client/
+  321  gedit dts.py
+  322   cd fixp/etarch/dts-client/protocol
+  323  gedit dts_pb2.py
+  324  cd fixp/etarch/dts-client/protocol
+  325  gedit etcp_pb2.py
+  326  cd fixp/etarch/dts-client/
+  327  python chat.py eth0 e1 w1
+  328  python chat.py eth0 e1 w1
+  329  python chat.py eth0 e1 w1
+  330  python chat.py eth0 e1 w1
+  331  python chat.py eth0 e1 w1
+  332  python chat.py eth0 e1 w1
+  333  ifconfig
+  334  cd fixp/etarch/dts-client/
+  335  gedit chat.py
+  336  ls
+  337  cd fixp
+  338  ls
+  339  cd etarch/dts-client/protocol/
+  340  ls
+  341  gedit etcp_pb2.py
+  342  cd fixp/etarch/dts-client
+  343  ls
+  344  gedit dts_wire.py
+  345  cd /fixp/etarch/dts-client
+  346  cd fixp/etarch/dts-client
+  347  ls
+  348  cd protocol/
+  349  ls
+  350  gedit dts_pb2.py
+  351  cd fixp/etarch/dts-client
+  352  python chat.py eth0 e1 w1
+  353  python chat.py eth0 e1 w1
+  354  python chat.py eth0 e1 w1
+  355  python chat.py eth0 e1 w1
+  356  python chat.py eth0 e1 w1
+  357  python chat.py eth0 e1 w1
+  358  python chat.py eth0 e1 w1
+  359  python chat.py eth0 e1 w1
+  360  cd fixp/etarch/dts-client
+  361  ls
+  362  gedit dts.py
+  363  wireshark
+  364   cd fixp/etarch/dts-client/
+  365  gedit dts.py
+  366   cd fixp/etarch/dts-client/
+  367   cd fixp/etarch/dts-client/
+  368  gedit chat.py 
+  369  cd fixp/etarch/dts-client/
+  370  wireshark
+  371  wireshark
+  372  cd fixp/etarch/dts-client/
+  373  cd fixp/etarch/dts-client/
+  374  python chat.py eth0 e1 w1
+  375  python chat.py eth0 e1 w1
+  376  python chat.py eth0 e1 w1
+  377  cd fixp/etarch/dts-client/
+  378  gedit chat.py
+  379  cd fixp/etarch/dts-client/
+  380  gedit dts.py
+  381  wireshark
+  382  cd fixp
+  383  cd etarch/dts-client/
+  384  cd protocol/
+  385  gedit etcp_pb2.py
+  386  cd fixp/etarch/dts-client/
+  387  python chat.py eth0 e1 w1
+  388  python chat.py eth0 e1 w1
+  389  python chat.py eth0 e1 w1
+  390  python chat.py eth0 e1 w1
+  391  python chat.py eth0 e1 w1
+  392  python chat.py eth0 e1 w1
+  393  python chat.py eth0 e1 w1
+  394  python chat.py eth0 e1 w1
+  395  python chat.py eth0 e1 w1
+  396  python chat.py eth0 e1 w1
+  397  python chat.py eth0 e1 w1
+  398  python chat.py eth0 e1 w1
+  399  python chat.py eth0 e1 w1
+  400  python chat.py eth0 e1 w1
+  401  python chat.py eth0 e1 w1
+  402  cd fixp
+  403  cd etarch/
+  404  cd dts-client/
+  405  ls
+  406  gedit dts.py
+  407  ifconfig
+  408  wireshark
+  409  ls
+  410  cd fixp
+  411  ls
+  412  cd etarch/dts-client/
+  413  ls
+  414  ifconfig
+  415  shutdown -h now
+  416  wireshark
+  417  cd fixp
+  418  ls
+  419  cd IP
+  420  ls
+  421  gedit serverIP.py 
+  422  ifconfig
+  423  shutdown -h now
+  424  ifconfig
+  425  shutdown -h now
+  426  vim /etc/hostname 
+  427  ifconfig
+  428  reboot
+  429  python chat.py eth0 e1 w1
+  430  cd fixp/etarch/dts-client/
+  431  python chat.py eth0 e1 w1
+  432  ls
+  433  cd fixp/etarch/dts-client/
+  434  wireshark
+  435  wireshark
+  436  fixp/etarch/dts-client
+  437  de fixp/etarch/dts-client
+  438  cd fixp/etarch/dts-client
+  439  python chat.py eth0 e1 w1
+  440  python chat.py eth0 e1 w1
+  441  cd fixp
+  442  cd etarch/dts-client/
+  443  python chat.py eth0 e1 w1
+  444  wireshark
+  445  cd fixp
+  446  cd etarch/
+  447  cd dts-client/
+  448  s
+  449  ls
+  450  ls
+  451  ls
+  452  ls
+  453  cd fixp/etarch/dts-client/
+  454  python chat.py eth0 e1 w1
+  455  python chat.py eth0 e1 w1
+  456  python chat.py eth0 e1 w1
+  457  python chat.py eth0 e1 w1
+  458  cd fixp/etarch/dts-client/
+  459  python chat.py eth0 e1 w1
+  460  python chat.py eth0 e1 w1
+  461  python chat.py eth0 e1 w1
+  462  python chat.py eth0 e1 w1
+  463  python chat.py eth0 e1 w1
+  464  python chat.py eth0 e1 w1
+  465  python chat.py eth0 e1 w1
+  466  python chat.py eth0 e1 w1
+  467  python chat.py eth0 e1 w1
+  468  python chat.py eth0 e1 w1
+  469  wireshark
+  470  wireshark
+  471  cd fixp/etarch//dts-client/
+  472  python chat.py eth0 e1 w1
+  473  python chat.py eth0 e1 w1
+  474  python chat.py eth0 e1 w1
+  475  python chat.py eth0 e1 w1
+  476  wireshark
+  477  shutdown -h now
+  478  wireshark
+  479  wireshark
+  480  cd fixp
+  481  cd etarch/dts-client/
+  482  python chat.py eth0 e1 w1
+  483  python chat.py eth0 e1 w1
+  484  python chat.py eth0 e1 w1
+  485  python chat.py eth0 e1 w1
+  486  python chat.py eth0 e1 w1
+  487  python chat.py eth0 e1 w1
+  488  python chat.py eth0 e1 w1
+  489  python chat.py eth0 e1 w1
+  490  python chat.py eth0 e1 w1
+  491  python chat.py eth0 e1 w1
+  492  python chat.py eth0 e1 w1
+  493  cd fixp/etarch/dts-client/.
+  494  cd fixp
+  495  cd etarch/dts-client/
+  496  python chat.py eth0 e1 w1
+  497  python chat.py eth0 e1 w1
+  498  shutdown -h now
+  499  cd fixp/etarch/dts-client/
+  500  python chat.py eth0 e1 w1
+  501  clear
+  502  ls
+  503  cd fixp
+  504  ls
+  505  c,ear
+  506  clear
+  507  ls
+  508  history > instrucoes.txt

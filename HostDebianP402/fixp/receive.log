@@ -1,0 +1,69 @@
+sniffing on eth0
+got a packet
+###[ Ethernet ]### 
+  dst       = 08:00:27:93:1f:fd
+  src       = ff:ff:ff:ff:ff:ff
+  type      = 0x800
+###[ IP ]### 
+     version   = 4L
+     ihl       = 5L
+     tos       = 0x0
+     len       = 54
+     id        = 1
+     flags     = 
+     frag      = 0L
+     ttl       = 63
+     proto     = tcp
+     chksum    = 0x40ec
+     src       = 192.168.0.30
+     dst       = 192.168.184.102
+     \options   \
+###[ TCP ]### 
+        sport     = 50344
+        dport     = 1234
+        seq       = 0
+        ack       = 0
+        dataofs   = 5L
+        reserved  = 0L
+        flags     = S
+        window    = 8192
+        chksum    = 0x2c07
+        urgptr    = 0
+        options   = []
+###[ Raw ]### 
+           load      = 'ipv4 message 1'
+
+got a packet
+###[ Ethernet ]### 
+  dst       = 08:00:27:93:1f:fd
+  src       = ff:ff:ff:ff:ff:ff
+  type      = 0x800
+###[ IP ]### 
+     version   = 4L
+     ihl       = 5L
+     tos       = 0x0
+     len       = 54
+     id        = 1
+     flags     = 
+     frag      = 0L
+     ttl       = 63
+     proto     = tcp
+     chksum    = 0x40ec
+     src       = 192.168.0.30
+     dst       = 192.168.184.102
+     \options   \
+###[ TCP ]### 
+        sport     = 49567
+        dport     = 1234
+        seq       = 0
+        ack       = 0
+        dataofs   = 5L
+        reserved  = 0L
+        flags     = S
+        window    = 8192
+        chksum    = 0x2f10
+        urgptr    = 0
+        options   = []
+###[ Raw ]### 
+           load      = 'ipv4 message 1'
+
