@@ -11,7 +11,7 @@ The evaluation scenario in Figure XX has two communicating entities (Entities 01
 </p>
 
 <p align="center">
-<img width="35%" alt="image" src="https://github.com/user-attachments/assets/b5c4b434-6989-4866-b283-bdc84d22c69a" />
+<img width="35%" alt="image" src="https://github.com/user-attachments/assets/2ba29a5e-287a-49fd-afea-c43571b2c476" />
 </p>
 
 <p align="justify">
